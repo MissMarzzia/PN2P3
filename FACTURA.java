@@ -6,15 +6,17 @@ public class FACTURA {
     private Long numero;
     private double total;
     private CLIENTE clienteFatura; // faltaba una N!
+    private FACTURADETALLE detalleFactura;
 
     public FACTURA() {
     }
 
-    public FACTURA(Date fecha, Long numero, double total, CLIENTE clienteFactura) {
+    public FACTURA(Date fecha, Long numero, double total, CLIENTE clienteFactura, FACTURADETALLE detalleFactura) {
         this.fecha = fecha;
         this.numero = numero;
         this.total = total;
-        thi.clienteFactura = clienteFactura;
+        this.clienteFactura = clienteFactura; // faltaba s, re distraida!
+        this.detalleFactura = detalleFactura;
     }
 
     public Date getFecha() {
@@ -47,6 +49,14 @@ public class FACTURA {
     
     public void setClienteFactura(CLIENTE clienteFactura){
         this.clienteFactura = clienteFactura;
+    }
+    
+    public FACTURADETALLE getDetalleFactura(){
+        return detalleFactura;
+    }
+    
+    public void setDetalleFactura(FACTURADETALLE detalleFactura){
+        this.detalleFactura= detalleFactura;
     }
     
 }
