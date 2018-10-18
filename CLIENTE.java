@@ -2,6 +2,9 @@ public class CLIENTE {
     private String denominacion,
             cuit;
     private DOMICILIO domicilioCliente;
+    
+    public CLIENTE(){
+    }
 
    public CLIENTE(String denominacion, String cuit, DOMICILIO domicilioCliente) {
         this.denominacion = denominacion;
