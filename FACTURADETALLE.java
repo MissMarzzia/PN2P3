@@ -1,11 +1,11 @@
 public class FACTURADETALLE {
     private int cantidad;
-    private ARTICULO articuloDetalle;
+    private List<ARTICULO> articuloDetalle;
 
     public FACTURADETALLE() {
     }
 
-    public FACTURADETALLE(int cantidad, ARTICULO articuloDetalle) {
+    public FACTURADETALLE(int cantidad, List<ARTICULO> articuloDetalle) {
         this.cantidad = cantidad;
         this.articuloDetalle = articuloDetalle;
     }
@@ -18,12 +18,12 @@ public class FACTURADETALLE {
         this.cantidad = cantidad;
     }
     
-    public ARTICULO getArticuloDetalle(){
+    public List<ARTICULO> getArticuloDetalle() {
         return articuloDetalle;
     }
-    
-    public void setArticuloDetalle(ARTICULO articuloDetalle){
-        this.articuloDetalle = articuloDetalle; //Faltaba este cachito. 
+
+    public void setArticuloDetalle(List<ARTICULO> articuloDetalle) {
+        this.articuloDetalle = articuloDetalle;
     }
     
     
