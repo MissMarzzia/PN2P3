@@ -23,7 +23,7 @@ public class FACTURADETALLE {
     }
     
     public void setArticuloDetalle(ARTICULO articuloDetalle){
-        this.articuloDetalle;
+        this.articuloDetalle = articuloDetalle; //Faltaba este cachito. 
     }
     
     
