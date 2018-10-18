@@ -5,7 +5,7 @@ public class FACTURA {
     private Date fecha;
     private Long numero;
     private double total;
-    private CLIENTE clieteFatura;
+    private CLIENTE clienteFatura; // faltaba una N!
 
     public FACTURA() {
     }
